@@ -1,28 +1,27 @@
-import java.util.Scanner;
+import java.security.SecureRandom;//imported the secure random calls which makes random numbers
 
-public class MaximumFinder {
-    public static void main (String[] args){
-        //create Scanner for input from command window
-        Scanner input = new Scanner(System.in);
-        
-        //prompt for and input three floating point values
-        System.out.print(
-                "Enter three floating-point values seperated by spaces; ");
-        double number1 = input.nextDouble();//read first
-        double number2 = input.nextDouble();//read first
-        double number3 = input.nextDouble();//read first
-        
-        double result = maximum(number1, number2, number3);
-        
-        System.out.println("Maximum is: "+result);
-    }
-    public static double maximum(double x, double y, double z){
-        if (y>maximumValue){
-            maximumValue=y;
-        }//END:if
-    }
-    if (z > maximumValue = z;){
-        maximumValue =z;
-    }
-}
-/////////////////doesnt work
+public class RandomInteger {
+    public static void main(String[] args) {
+        SecureRandom randomNumbers = new SecureRandom();
+        //creates a new object
+
+        //Loop through 20 rolls of the die
+        for(int counter =1; counter <= 20; counter++){
+            //20 is the number of numbers that it will output per roll
+            //Get a random number between (inclusive) 1,6
+            int face = 1 + randomNumbers.nextInt(6);
+            //bound feature controls how many sides of the dice there are so only 1-6 is possible
+            //will generate a number between one and 6 each time it loops
+
+            //Report the number on the face
+            System.out.printf("%d", face);
+
+            //After rolling the die 5 time...
+            if(counter %5 == 0){//dividing by 5 with no remainder = 5 rolls
+                //each counter is a roll
+                //(counter %5 == 0) is the number of times that the dice is rolls
+                System.out.println();
+            }//if
+        }//for
+    }//main
+}//RandomInteger
