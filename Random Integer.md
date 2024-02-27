@@ -2,6 +2,9 @@ import java.security.SecureRandom;//imported the secure random calls which makes
 
 public class RandomInteger {
     public static void main(String[] args) {
+
+        //int numberOfFaces = 1_000; //can promt the user to input number then have it equal the intNum
+
         SecureRandom randomNumbers = new SecureRandom();
         //creates a new object
         //shawn weed
