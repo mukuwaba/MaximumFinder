@@ -1,0 +1,26 @@
+import java.security.SecureRandom;
+
+public class RandomInteger {
+    public static void main(String[] args) {
+        SecureRandom randomNumbers = new SecureRandom();
+        //creates an object
+
+        //Loop through 20 rolls of the diw
+        for(int counter =1; counter <= 20; counter++){
+            //Get a random number between (inclusive 1,6)
+            int face = 1 + randomNumbers.nextInt(6);
+            //will generate a number between one and 6 each time it loops
+
+            //Report the number on the face
+            System.out.printf("%d", face);
+
+            //After rolling the die 5 time...
+            if(counter %5 == 0){//dividing by 5 with no remainder = 5 rolls
+                System.out.println();
+
+            }//if
+
+            //If the counter
+        }
+    }//main
+}//RandomInteger
