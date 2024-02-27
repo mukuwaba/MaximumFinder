@@ -4,6 +4,7 @@ public class RandomInteger {
     public static void main(String[] args) {
         SecureRandom randomNumbers = new SecureRandom();
         //creates a new object
+        //shawn weed
 
         //Loop through 20 rolls of the die
         for(int counter =1; counter <= 20; counter++){
@@ -20,6 +21,7 @@ public class RandomInteger {
             if(counter %5 == 0){//dividing by 5 with no remainder = 5 rolls
                 //each counter is a roll
                 //(counter %5 == 0) is the number of times that the dice is rolls
+                //The == # is details that you are looking for numbers with a remainder of 0
                 System.out.println();
             }//if
         }//for
